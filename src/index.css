@@ -6,8 +6,262 @@ body {
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
+/* ============================ */
+.nav{
+  background-color: #02254D;
+  justify-content: center;
+}
+button#dropdown-basic {
+  background: transparent!important;
+  border: none!important;
+}
+/* =============================== */
+.get-offer-button{
+  display: block!important;
+  width: 18rem;
+  font-size: 16px!important;
+  font-weight: 500!important;
+  background-color: #15DB95!important;
+  padding: 10px!important;
+  border: none!important;
 
-code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
-    monospace;
+}
+.card-outer-div{
+  box-shadow: #00000017 3px 17px 13px;
+  border-radius: 10px;
+  padding: 45px 45px 0px 45px;
+  width: 62rem;
+  margin: auto;
+  margin-bottom: 5rem;
+}
+.card-left img{
+  width: 13rem;
+  margin-bottom: 1rem;
+}
+.card-left h4{
+  margin-bottom: 1.5rem;
+}
+.blue-box-outer{
+  text-align: center;
+}
+.blue-box {
+  border-radius: 5px;
+  background-color: #02254D;
+  width: 172px;
+  height: 35px;
+}
+.data{
+  gap: 1rem;
+}
+.blue-box p{
+  font-weight: 500;
+  text-align: center;
+  padding-top: 5px;
+  font-size: 16px;
+  color: #fff;
+  margin: 0!important;
+}
+.card-right{
+  padding-left: 3.5rem!important;
+}
+.card-right-heading{
+  margin-top: 0.5rem;
+  font-size: 18px!important;
+  margin-bottom: 2rem;
+}
+.card-right-heading span{
+  color: #18DB95;
+}
+.pros-cons-div h2{
+  font-size: 18px!important;
+  color: #18DB95;
+}
+.more-btn{
+  background: transparent!important;
+  color: #02254D!important;
+  border: none!important;
+  text-decoration: underline!important;
+  font-size: 20px!important;
+  font-weight: 600!important;
+  padding: 0!important;
+}
+/* Add these CSS rules to your stylesheet */
+/* .less-btn {
+  position: absolute;
+  top: 0;
+  right: 0;
+} */
+
+.additional-content {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out; /* Change the duration and easing function as desired */
+}
+
+.show-more {
+  max-height: 1000px; /* Adjust the value to an appropriate maximum height for the additional content */
+}
+
+/* ==== additional content -===== */
+.list-wrapper{
+  display: flex;
+  width: 100%;
+  gap: 2rem;
+}
+.list-wrapper ul{
+  list-style: none;
+  padding: 0;
+  line-height: 1.7rem;
+  width: 50%;
+}
+.list-wrapper ul li{
+  color: #6D7F87;
+  font-size: 16px;
+}
+.qualification-box h3{
+  font-size: 19px!important;
+  color: #02254D;
+}
+.fees-box h3{
+  font-size: 19px!important;
+  color: #02254D;
+}
+.qualification-box {
+    border-top: solid 2px #707070;
+    border-bottom: 2px solid #707070;
+    padding-top: 1.5rem;
+    padding-bottom: 0.5rem;
+    margin-bottom: 2rem;
+    margin-top: 1rem;
+}
+.qualification-box-content{
+  justify-content: space-between;
+}
+.qualification-box-content p{
+  color: #707070;
+}
+.fees-box-content{
+  justify-content: space-between;
+}
+.fees-box-content p{
+  color: #707070;
+}
+.additional-content-btn{
+  justify-content: space-between;
+  margin-top: 4rem;
+}
+a.read-full-review.btn.btn-primary {
+  width: 16rem;
+  font-size: 16px!important;
+  font-weight: 500!important;
+  background-color: transparent!important;
+  padding: 10px!important;
+  border: 2px solid #18DB95!important;
+  color: #18DB95;
+}
+.btnn{
+  width: 16rem!important;
+}
+.less-btn{
+  transform: translate(1px, -101px)!important;
+  background: transparent!important;
+  color: #02254D!important;
+  border: none!important;
+  text-decoration: underline!important;
+  font-size: 20px!important;
+  font-weight: 600!important;
+  padding: 0!important;
+  margin: 0!important;
+}
+
+.more-btn{
+  transform: none!important;
+  margin-bottom: 3rem;
+}
+.list{
+  justify-content: space-between;
+  margin-top: 1rem;
+  margin-bottom: 2rem;
+}
+.list ul{
+  list-style: none;
+  padding: 0!important;
+  margin: 0!important;
+  color: #707070;
+}
+/* .additional-content-wrapper{
+  
+  transform: translateY(-32px)!important;
+} */
+
+
+
+
+@media (min-width: 320px) and (max-width: 480px) {
+  .card-outer-div {
+    width: 100%;
+    padding: 30px 30px 0px 30px!important;
+  }
+  .data{
+    margin-top: 2rem;
+    flex-wrap: wrap;
+    gap: 0rem;
+  }
+  .card-right {
+    padding-left: calc(var(--bs-gutter-x) * .5)!important;
+}
+.card-right-heading{
+  margin-bottom: 1rem;
+}
+.fees-box-content {
+  flex-wrap: wrap;
+}
+.fees-box-content p{
+  margin-bottom: 0.5rem!important;
+}
+a.read-full-review.btn.btn-primary {
+  width: 10rem;
+}
+.btnn {
+  width: 10rem!important;
+}
+.additional-content-btn {
+  gap: 1rem;
+}
+.blue-box-outer {
+  width: 100%;
+}
+.blue-box{
+  width: 100%;
+}
+}
+
+/* =========== media query for ipad ========= */
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  
+  .card-outer-div {
+    width: 100%;
+    /* padding: 30px 30px 0px 30px!important; */
+  }
+.data{
+  margin-top: 2rem;
+}
+.card-right {
+  padding-left: calc(var(--bs-gutter-x) * .5)!important;
+}
+  
+}
+
+
+@media (min-width: 768px) and (max-width: 1024px) and (orientation: landscape) {
+  
+  .card-outer-div {
+    width: 100%;
+    padding: 30px 30px 0px 30px!important;
+  }
+  .card-right {
+    padding-left: 2rem!important;
+}
+  
 }
